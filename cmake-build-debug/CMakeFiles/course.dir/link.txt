@@ -1,0 +1,1 @@
+/usr/bin/g++-9  -g   CMakeFiles/course.dir/week1/sort_by/sort_by.cpp.o  -o course 

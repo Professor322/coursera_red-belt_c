@@ -1,0 +1,38 @@
+#IncludeRegexLine: ^[ 	]*[#%][ 	]*(include|import)[ 	]*[<"]([^">]+)([">])
+
+#IncludeRegexScan: ^.*$
+
+#IncludeRegexComplain: ^$
+
+#IncludeRegexTransform: 
+
+../week1/test_runner.h
+sstream
+-
+stdexcept
+-
+iostream
+-
+map
+-
+set
+-
+string
+-
+vector
+-
+
+/home/professor/Desktop/coursera_red-belt_c/week1/sort_by/airline_ticket.h
+string
+-
+
+/home/professor/Desktop/coursera_red-belt_c/week1/sort_by/sort_by.cpp
+airline_ticket.h
+/home/professor/Desktop/coursera_red-belt_c/week1/sort_by/airline_ticket.h
+test_runner.h
+/home/professor/Desktop/coursera_red-belt_c/week1/sort_by/test_runner.h
+algorithm
+-
+numeric
+-
+
