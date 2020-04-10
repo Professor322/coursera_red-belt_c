@@ -123,32 +123,59 @@ course/fast:
 	$(MAKE) -f CMakeFiles/course.dir/build.make CMakeFiles/course.dir/build
 .PHONY : course/fast
 
-week1/sort_by/sort_by.o: week1/sort_by/sort_by.cpp.o
+week2/booking/booking_manager.o: week2/booking/booking_manager.cpp.o
 
-.PHONY : week1/sort_by/sort_by.o
+.PHONY : week2/booking/booking_manager.o
 
 # target to build an object file
-week1/sort_by/sort_by.cpp.o:
-	$(MAKE) -f CMakeFiles/course.dir/build.make CMakeFiles/course.dir/week1/sort_by/sort_by.cpp.o
-.PHONY : week1/sort_by/sort_by.cpp.o
+week2/booking/booking_manager.cpp.o:
+	$(MAKE) -f CMakeFiles/course.dir/build.make CMakeFiles/course.dir/week2/booking/booking_manager.cpp.o
+.PHONY : week2/booking/booking_manager.cpp.o
 
-week1/sort_by/sort_by.i: week1/sort_by/sort_by.cpp.i
+week2/booking/booking_manager.i: week2/booking/booking_manager.cpp.i
 
-.PHONY : week1/sort_by/sort_by.i
+.PHONY : week2/booking/booking_manager.i
 
 # target to preprocess a source file
-week1/sort_by/sort_by.cpp.i:
-	$(MAKE) -f CMakeFiles/course.dir/build.make CMakeFiles/course.dir/week1/sort_by/sort_by.cpp.i
-.PHONY : week1/sort_by/sort_by.cpp.i
+week2/booking/booking_manager.cpp.i:
+	$(MAKE) -f CMakeFiles/course.dir/build.make CMakeFiles/course.dir/week2/booking/booking_manager.cpp.i
+.PHONY : week2/booking/booking_manager.cpp.i
 
-week1/sort_by/sort_by.s: week1/sort_by/sort_by.cpp.s
+week2/booking/booking_manager.s: week2/booking/booking_manager.cpp.s
 
-.PHONY : week1/sort_by/sort_by.s
+.PHONY : week2/booking/booking_manager.s
 
 # target to generate assembly for a file
-week1/sort_by/sort_by.cpp.s:
-	$(MAKE) -f CMakeFiles/course.dir/build.make CMakeFiles/course.dir/week1/sort_by/sort_by.cpp.s
-.PHONY : week1/sort_by/sort_by.cpp.s
+week2/booking/booking_manager.cpp.s:
+	$(MAKE) -f CMakeFiles/course.dir/build.make CMakeFiles/course.dir/week2/booking/booking_manager.cpp.s
+.PHONY : week2/booking/booking_manager.cpp.s
+
+week2/booking/course_solution.o: week2/booking/course_solution.cpp.o
+
+.PHONY : week2/booking/course_solution.o
+
+# target to build an object file
+week2/booking/course_solution.cpp.o:
+	$(MAKE) -f CMakeFiles/course.dir/build.make CMakeFiles/course.dir/week2/booking/course_solution.cpp.o
+.PHONY : week2/booking/course_solution.cpp.o
+
+week2/booking/course_solution.i: week2/booking/course_solution.cpp.i
+
+.PHONY : week2/booking/course_solution.i
+
+# target to preprocess a source file
+week2/booking/course_solution.cpp.i:
+	$(MAKE) -f CMakeFiles/course.dir/build.make CMakeFiles/course.dir/week2/booking/course_solution.cpp.i
+.PHONY : week2/booking/course_solution.cpp.i
+
+week2/booking/course_solution.s: week2/booking/course_solution.cpp.s
+
+.PHONY : week2/booking/course_solution.s
+
+# target to generate assembly for a file
+week2/booking/course_solution.cpp.s:
+	$(MAKE) -f CMakeFiles/course.dir/build.make CMakeFiles/course.dir/week2/booking/course_solution.cpp.s
+.PHONY : week2/booking/course_solution.cpp.s
 
 # Help Target
 help:
@@ -159,9 +186,12 @@ help:
 	@echo "... rebuild_cache"
 	@echo "... course"
 	@echo "... edit_cache"
-	@echo "... week1/sort_by/sort_by.o"
-	@echo "... week1/sort_by/sort_by.i"
-	@echo "... week1/sort_by/sort_by.s"
+	@echo "... week2/booking/booking_manager.o"
+	@echo "... week2/booking/booking_manager.i"
+	@echo "... week2/booking/booking_manager.s"
+	@echo "... week2/booking/course_solution.o"
+	@echo "... week2/booking/course_solution.i"
+	@echo "... week2/booking/course_solution.s"
 .PHONY : help
 
 

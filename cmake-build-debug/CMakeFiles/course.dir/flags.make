@@ -6,5 +6,5 @@ CXX_FLAGS = -g   -std=gnu++17
 
 CXX_DEFINES = 
 
-CXX_INCLUDES = -I/home/professor/Desktop/coursera_red-belt_c/week1 
+CXX_INCLUDES = -I/home/professor/Desktop/coursera_red-belt_c/include 
 

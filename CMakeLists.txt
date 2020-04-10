@@ -4,7 +4,7 @@ project(course)
 
 set(CMAKE_CXX_STANDARD 17)
 
-include_directories(week1)
+include_directories(include)
 
-add_executable(course  week1/sort_by/sort_by.cpp)
+add_executable(course week2/booking/booking_manager.cpp week2/booking/course_solution.cpp)
 

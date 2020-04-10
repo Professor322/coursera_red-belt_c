@@ -6,33 +6,17 @@
 
 #IncludeRegexTransform: 
 
-../week1/test_runner.h
-sstream
--
-stdexcept
+/home/professor/Desktop/coursera_red-belt_c/week2/booking/booking_manager.cpp
+cinttypes
 -
 iostream
 -
-map
--
-set
+unordered_map
 -
 string
 -
-vector
+queue
 -
-
-/home/professor/Desktop/coursera_red-belt_c/week1/sort_by/airline_ticket.h
-string
--
-
-/home/professor/Desktop/coursera_red-belt_c/week1/sort_by/sort_by.cpp
-airline_ticket.h
-/home/professor/Desktop/coursera_red-belt_c/week1/sort_by/airline_ticket.h
-test_runner.h
-/home/professor/Desktop/coursera_red-belt_c/week1/sort_by/test_runner.h
-algorithm
--
-numeric
+stack
 -
 
