@@ -6,7 +6,7 @@ using namespace std;
 class Editor {
  public:
   // Реализуйте конструктор по умолчанию и объявленные методы
-  Editor() : cursor(text.end()) {}
+  Editor() = default;
   void Left() {
   	if (cursor != text.begin()) {
 		cursor--;
@@ -22,23 +22,22 @@ class Editor {
   }
   void Cut(size_t tokens = 1) {
   	Copy(tokens);
+
   	while(tokens && cursor != text.end()) {
   		cursor = text.erase(cursor);
   		tokens--;
   	}
   }
   void Copy(size_t tokens = 1) {
-  	buff_list.clear();
+  	buff.clear();
   	for (auto it = cursor;
   		it != text.end() && tokens != 0;
   		++it, --tokens)
-  		buff_list.push_back(*it);
+  		buff.push_back(*it);
   }
   void Paste() {
-  	if (!buff_list.empty()) {
-		text.splice(cursor, buff_list);
-		cursor = --buff_list.end();
-	}
+  	list<char> temp_buff(buff.begin(), buff.end());
+  	text.splice(cursor, temp_buff);
   }
   string GetText() const {
 	  return  {text.begin(), text.end()};
@@ -46,15 +45,38 @@ class Editor {
 
 private:
 
-	list<char> buff_list;
+	list<char> buff;
 	list<char> text;
-	list<char>::iterator cursor;
+	list<char>::iterator cursor = text.end();
 };
+
+
+
 
 void TypeText(Editor& editor, const string& text) {
   for(char c : text) {
     editor.Insert(c);
   }
+}
+
+void CustomTest2() {
+Editor editor;
+TypeText(editor, "1234567");
+
+editor.Left();
+
+editor.Left();
+
+editor.Cut(1);
+
+editor.Paste();
+
+editor.Paste();
+
+editor.Paste();
+
+ASSERT_EQUAL(editor.GetText(), "123456667");
+
 }
 
 void TestEditing() {
@@ -75,7 +97,7 @@ void TestEditing() {
     editor.Paste();
     editor.Left();
     editor.Left();
-   	Жeditor.Cut(3);
+   	editor.Cut(3);
     
     ASSERT_EQUAL(editor.GetText(), "world, hello");
   }
@@ -104,6 +126,86 @@ void TestReverse() {
   }
   
   ASSERT_EQUAL(editor.GetText(), "Reverse");
+}
+
+void CustomTest() {
+	Editor e;
+	const string text = "chlen";
+
+	TypeText(e, text);
+	for (int i = 0; i < text.size(); ++i) {
+		e.Left();
+	}
+	e.Cut();
+	e.Paste();
+	e.Cut(1);
+	ASSERT_EQUAL(e.GetText(), "clen");
+}
+
+void TestCut()
+{
+	Editor editor;
+	//1
+	editor.Cut(10);
+	editor.Insert('a');
+	editor.Left();
+	//2
+	editor.Cut(1);
+	ASSERT_EQUAL(editor.GetText(), "");
+	editor.Paste();
+	ASSERT_EQUAL(editor.GetText(), "a");
+	//3
+	editor.Cut(0);
+	editor.Paste();
+	ASSERT_EQUAL(editor.GetText(), "a");
+	TypeText(editor, "bcde");
+	editor.Left();editor.Left();editor.Left();editor.Left();editor.Left();
+	//4
+	editor.Cut(10);
+	ASSERT_EQUAL(editor.GetText(), "");
+	editor.Paste();
+	ASSERT_EQUAL(editor.GetText(), "abcde");
+	editor.Left();editor.Left();editor.Left();editor.Left();editor.Left();
+	//5
+	editor.Cut(5);
+	ASSERT_EQUAL(editor.GetText(), "");
+	editor.Paste();
+	//6
+	editor.Left();editor.Left();editor.Left();editor.Left();editor.Left();
+	editor.Cut(1);
+	ASSERT_EQUAL(editor.GetText(), "bcde");
+	editor.Right();
+	editor.Cut(1);
+	ASSERT_EQUAL(editor.GetText(), "bde");
+	editor.Cut(1);
+	editor.Cut(1);
+	ASSERT_EQUAL(editor.GetText(), "b");
+}
+
+void TestCopy()
+{
+	Editor editor;
+	//1
+	editor.Copy(10);
+	editor.Insert('a');
+	editor.Paste();
+	editor.Left();
+	ASSERT_EQUAL(editor.GetText(), "a");
+	//2
+	editor.Copy(1);
+	editor.Paste();
+	ASSERT_EQUAL(editor.GetText(), "aa");//between a
+	//3
+	editor.Copy(0);
+	editor.Paste();
+	ASSERT_EQUAL(editor.GetText(), "aa");
+	TypeText(editor, "bcde");
+	editor.Left();editor.Left();editor.Left();editor.Left();editor.Left();editor.Left();
+	//4
+	editor.Cut(10);
+	ASSERT_EQUAL(editor.GetText(), "");
+	editor.Paste();
+	ASSERT_EQUAL(editor.GetText(), "abcdea");
 }
 
 void TestNoText() {
@@ -146,5 +248,8 @@ int main() {
   RUN_TEST(tr, TestReverse);
   RUN_TEST(tr, TestNoText);
   RUN_TEST(tr, TestEmptyBuffer);
+	RUN_TEST(tr, CustomTest);
+RUN_TEST(tr, TestCut);
+	RUN_TEST(tr, CustomTest2);
   return 0;
 }
