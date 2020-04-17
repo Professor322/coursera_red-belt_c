@@ -27,6 +27,16 @@
 					<DistClean command="/usr/bin/make -j4 -f &quot;/home/professor/Desktop/coursera_red-belt_c/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
 				</MakeCommands>
 			</Target>
+			<Target title="edit_cache">
+				<Option working_dir="/home/professor/Desktop/coursera_red-belt_c/cmake-build-debug"/>
+				<Option type="4"/>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j4 -f &quot;/home/professor/Desktop/coursera_red-belt_c/cmake-build-debug/Makefile&quot;  VERBOSE=1 edit_cache"/>
+					<CompileFile command="/usr/bin/make -j4 -f &quot;/home/professor/Desktop/coursera_red-belt_c/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j4 -f &quot;/home/professor/Desktop/coursera_red-belt_c/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j4 -f &quot;/home/professor/Desktop/coursera_red-belt_c/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
 			<Target title="course">
 				<Option output="/home/professor/Desktop/coursera_red-belt_c/cmake-build-debug/course" prefix_auto="0" extension_auto="0"/>
 				<Option working_dir=""/>
@@ -75,21 +85,11 @@
 					<DistClean command="/usr/bin/make -j4 -f &quot;/home/professor/Desktop/coursera_red-belt_c/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
 				</MakeCommands>
 			</Target>
-			<Target title="edit_cache">
-				<Option working_dir="/home/professor/Desktop/coursera_red-belt_c/cmake-build-debug"/>
-				<Option type="4"/>
-				<MakeCommands>
-					<Build command="/usr/bin/make -j4 -f &quot;/home/professor/Desktop/coursera_red-belt_c/cmake-build-debug/Makefile&quot;  VERBOSE=1 edit_cache"/>
-					<CompileFile command="/usr/bin/make -j4 -f &quot;/home/professor/Desktop/coursera_red-belt_c/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
-					<Clean command="/usr/bin/make -j4 -f &quot;/home/professor/Desktop/coursera_red-belt_c/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
-					<DistClean command="/usr/bin/make -j4 -f &quot;/home/professor/Desktop/coursera_red-belt_c/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
-				</MakeCommands>
-			</Target>
 		</Build>
-		<Unit filename="/home/professor/Desktop/coursera_red-belt_c/week2/booking/booking_manager.cpp">
+		<Unit filename="/home/professor/Desktop/coursera_red-belt_c/week5/priority_collection/course_solution.cpp">
 			<Option target="course"/>
 		</Unit>
-		<Unit filename="/home/professor/Desktop/coursera_red-belt_c/week2/booking/course_solution.cpp">
+		<Unit filename="/home/professor/Desktop/coursera_red-belt_c/week5/priority_collection/priority_collection.cpp">
 			<Option target="course"/>
 		</Unit>
 		<Unit filename="/home/professor/Desktop/coursera_red-belt_c/CMakeLists.txt">

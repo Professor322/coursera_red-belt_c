@@ -1,6 +1,6 @@
 file(REMOVE_RECURSE
-  "CMakeFiles/course.dir/week2/booking/booking_manager.cpp.o"
-  "CMakeFiles/course.dir/week2/booking/course_solution.cpp.o"
+  "CMakeFiles/course.dir/week5/priority_collection/course_solution.cpp.o"
+  "CMakeFiles/course.dir/week5/priority_collection/priority_collection.cpp.o"
   "course"
   "course.pdb"
 )

@@ -11,12 +11,16 @@ class SimpleVector {
 public:
 	SimpleVector() = default;
 	explicit SimpleVector(size_t size);
+	SimpleVector(const SimpleVector& other);
 	~SimpleVector();
 
 	T& operator[](size_t index);
+	void operator=(const SimpleVector& other);
 
 	T* begin();
 	T* end();
+	const T* begin() const;
+	const T* end() const;
 
 	size_t Size() const;
 	size_t Capacity() const;
@@ -34,6 +38,28 @@ SimpleVector<T>::SimpleVector(size_t size)
 		, size(size)
 		, capacity(size)
 {
+}
+
+template <typename T>
+SimpleVector<T>::SimpleVector(const SimpleVector& other)
+		: data(new T[other.capacity])
+		, size(other.size)
+		, capacity(other.capacity)
+{
+	copy(other.begin(), other.end(), begin());
+}
+
+template <typename T>
+void	SimpleVector<T>::operator=(const SimpleVector& other) {
+	if (capacity >= other.capacity) {
+		size = other.size;
+		copy(other.begin(), other.end(), begin());
+	} else {
+		SimpleVector<T> temp(other);
+		swap(data, temp.data);
+		swap(size, temp.size);
+		swap(capacity, temp.capacity);
+	}
 }
 
 template <typename T>
@@ -76,5 +102,14 @@ T* SimpleVector<T>::begin() {
 
 template <typename T>
 T* SimpleVector<T>::end() {
+	return data + size;
+}
+template <typename T>
+const T* SimpleVector<T>::begin() const {
+	return data;
+}
+
+template <typename T>
+const T* SimpleVector<T>::end() const {
 	return data + size;
 }

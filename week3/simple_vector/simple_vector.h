@@ -38,6 +38,12 @@ public:
   T* end() {
   	return last;
   }
+  const T* begin() const {
+  	return first;
+  }
+  const T* end() const {
+  	return last;
+  }
 
   size_t Size() const {
   	return _size;

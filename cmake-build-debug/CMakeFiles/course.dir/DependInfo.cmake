@@ -4,8 +4,8 @@ set(CMAKE_DEPENDS_LANGUAGES
   )
 # The set of files for implicit dependencies of each language:
 set(CMAKE_DEPENDS_CHECK_CXX
-  "/home/professor/Desktop/coursera_red-belt_c/week2/booking/booking_manager.cpp" "/home/professor/Desktop/coursera_red-belt_c/cmake-build-debug/CMakeFiles/course.dir/week2/booking/booking_manager.cpp.o"
-  "/home/professor/Desktop/coursera_red-belt_c/week2/booking/course_solution.cpp" "/home/professor/Desktop/coursera_red-belt_c/cmake-build-debug/CMakeFiles/course.dir/week2/booking/course_solution.cpp.o"
+  "/home/professor/Desktop/coursera_red-belt_c/week5/priority_collection/course_solution.cpp" "/home/professor/Desktop/coursera_red-belt_c/cmake-build-debug/CMakeFiles/course.dir/week5/priority_collection/course_solution.cpp.o"
+  "/home/professor/Desktop/coursera_red-belt_c/week5/priority_collection/priority_collection.cpp" "/home/professor/Desktop/coursera_red-belt_c/cmake-build-debug/CMakeFiles/course.dir/week5/priority_collection/priority_collection.cpp.o"
   )
 set(CMAKE_CXX_COMPILER_ID "GNU")
 

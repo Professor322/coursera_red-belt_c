@@ -1,3 +1,3 @@
 /home/professor/Desktop/coursera_red-belt_c/cmake-build-debug/CMakeFiles/rebuild_cache.dir
-/home/professor/Desktop/coursera_red-belt_c/cmake-build-debug/CMakeFiles/course.dir
 /home/professor/Desktop/coursera_red-belt_c/cmake-build-debug/CMakeFiles/edit_cache.dir
+/home/professor/Desktop/coursera_red-belt_c/cmake-build-debug/CMakeFiles/course.dir

@@ -6,17 +6,41 @@
 
 #IncludeRegexTransform: 
 
-/home/professor/Desktop/coursera_red-belt_c/week2/booking/booking_manager.cpp
-cinttypes
+../include/test_runner.h
+sstream
+-
+stdexcept
 -
 iostream
 -
-unordered_map
+map
+-
+set
 -
 string
 -
-queue
+vector
 -
-stack
+
+/home/professor/Desktop/coursera_red-belt_c/week5/priority_collection/priority_collection.cpp
+test_runner.h
+/home/professor/Desktop/coursera_red-belt_c/week5/priority_collection/test_runner.h
+algorithm
+-
+iostream
+-
+iterator
+-
+memory
+-
+set
+-
+utility
+-
+vector
+-
+list
+-
+map
 -
 
