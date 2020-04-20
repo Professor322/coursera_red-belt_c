@@ -6,6 +6,14 @@
 
 #IncludeRegexTransform: 
 
+../include/profile.h
+chrono
+-
+iostream
+-
+string
+-
+
 ../include/test_runner.h
 sstream
 -
@@ -22,25 +30,25 @@ string
 vector
 -
 
-/home/professor/Desktop/coursera_red-belt_c/week5/priority_collection/priority_collection.cpp
+/home/professor/Desktop/coursera_red-belt_c/week5/concurrent_map/concurrent_map.cpp
 test_runner.h
-/home/professor/Desktop/coursera_red-belt_c/week5/priority_collection/test_runner.h
+/home/professor/Desktop/coursera_red-belt_c/week5/concurrent_map/test_runner.h
+profile.h
+/home/professor/Desktop/coursera_red-belt_c/week5/concurrent_map/profile.h
 algorithm
 -
-iostream
--
-iterator
--
-memory
--
-set
--
-utility
+numeric
 -
 vector
 -
-list
+string
 -
-map
+random
+-
+mutex
+-
+future
+-
+numeric
 -
 

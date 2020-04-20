@@ -6,6 +6,10 @@
 #include <vector>
 #include <string>
 #include <random>
+#include <mutex>
+#include <future>
+#include <numeric>
+
 using namespace std;
 
 template <typename K, typename V>
@@ -14,14 +18,44 @@ public:
   static_assert(is_integral_v<K>, "ConcurrentMap supports only integer keys");
 
   struct Access {
+  	unique_lock<mutex> lock;
     V& ref_to_value;
   };
 
-  explicit ConcurrentMap(size_t bucket_count);
+  struct Bucket {
+  	mutex m;
+  	map<K, V> bucket;
+  };
 
-  Access operator[](const K& key);
 
-  map<K, V> BuildOrdinaryMap();
+  explicit ConcurrentMap(size_t bucket_count) :
+  					buckets(bucket_count) {}
+
+
+  Access operator[](const K& key) {
+	auto& bucket = buckets[(key < 0 ? -key : key) % buckets.size()];
+	unique_lock<mutex> lock(bucket.m);
+	return {move(lock), bucket.bucket[key]};
+  }
+
+
+  map<K, V> BuildOrdinaryMap() {
+  	vector<unique_lock<mutex>> locks;
+  	for (auto& bucket : buckets) {
+  		locks.push_back(unique_lock(bucket.m));
+  	}
+  	map<K, V> result;
+	for (const auto& bucket : buckets) {
+		for (const auto& [key, value] : bucket.bucket) {
+			result[key] = value;
+		}
+	}
+	return result;
+  }
+
+
+private:
+  	vector<Bucket> buckets;
 };
 
 void RunConcurrentUpdates(
@@ -106,9 +140,41 @@ void TestSpeedup() {
   }
 }
 
+map<int, int> CreateHeavyMap() {
+	const size_t SIZE = 5;
+	const int value = 2;
+	map<int, int> result;
+
+	for (size_t i = 0; i < SIZE; ++i) {
+		result[i] = value;
+	}
+	return result;
+}
+
+void CustomTest() {
+	ConcurrentMap<int, int> dict(10);
+
+	auto func1 = [&dict] () {
+		for (size_t i = 0; i < 5; ++i) {
+			dict[i].ref_to_value++;
+		}
+	};
+
+	auto func2 = [&dict] () {
+		for (size_t i = 0; i < 5; ++i) {
+			dict[i].ref_to_value++;
+		}
+	};
+
+	auto player1 = async(func1);
+	auto player2 = async(func2);
+	ASSERT_EQUAL(dict.BuildOrdinaryMap(), CreateHeavyMap());
+}
+
 int main() {
   TestRunner tr;
   RUN_TEST(tr, TestConcurrentUpdate);
   RUN_TEST(tr, TestReadAndWrite);
   RUN_TEST(tr, TestSpeedup);
+  RUN_TEST(tr, CustomTest);
 }

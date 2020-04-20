@@ -1,6 +1,6 @@
 file(REMOVE_RECURSE
-  "CMakeFiles/course.dir/week5/priority_collection/course_solution.cpp.o"
-  "CMakeFiles/course.dir/week5/priority_collection/priority_collection.cpp.o"
+  "CMakeFiles/course.dir/week5/concurrent_map/concurrent_map.cpp.o"
+  "CMakeFiles/course.dir/week5/concurrent_map/course_solution.cpp.o"
   "course"
   "course.pdb"
 )

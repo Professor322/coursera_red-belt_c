@@ -123,59 +123,59 @@ course/fast:
 	$(MAKE) -f CMakeFiles/course.dir/build.make CMakeFiles/course.dir/build
 .PHONY : course/fast
 
-week5/priority_collection/course_solution.o: week5/priority_collection/course_solution.cpp.o
+week5/concurrent_map/concurrent_map.o: week5/concurrent_map/concurrent_map.cpp.o
 
-.PHONY : week5/priority_collection/course_solution.o
-
-# target to build an object file
-week5/priority_collection/course_solution.cpp.o:
-	$(MAKE) -f CMakeFiles/course.dir/build.make CMakeFiles/course.dir/week5/priority_collection/course_solution.cpp.o
-.PHONY : week5/priority_collection/course_solution.cpp.o
-
-week5/priority_collection/course_solution.i: week5/priority_collection/course_solution.cpp.i
-
-.PHONY : week5/priority_collection/course_solution.i
-
-# target to preprocess a source file
-week5/priority_collection/course_solution.cpp.i:
-	$(MAKE) -f CMakeFiles/course.dir/build.make CMakeFiles/course.dir/week5/priority_collection/course_solution.cpp.i
-.PHONY : week5/priority_collection/course_solution.cpp.i
-
-week5/priority_collection/course_solution.s: week5/priority_collection/course_solution.cpp.s
-
-.PHONY : week5/priority_collection/course_solution.s
-
-# target to generate assembly for a file
-week5/priority_collection/course_solution.cpp.s:
-	$(MAKE) -f CMakeFiles/course.dir/build.make CMakeFiles/course.dir/week5/priority_collection/course_solution.cpp.s
-.PHONY : week5/priority_collection/course_solution.cpp.s
-
-week5/priority_collection/priority_collection.o: week5/priority_collection/priority_collection.cpp.o
-
-.PHONY : week5/priority_collection/priority_collection.o
+.PHONY : week5/concurrent_map/concurrent_map.o
 
 # target to build an object file
-week5/priority_collection/priority_collection.cpp.o:
-	$(MAKE) -f CMakeFiles/course.dir/build.make CMakeFiles/course.dir/week5/priority_collection/priority_collection.cpp.o
-.PHONY : week5/priority_collection/priority_collection.cpp.o
+week5/concurrent_map/concurrent_map.cpp.o:
+	$(MAKE) -f CMakeFiles/course.dir/build.make CMakeFiles/course.dir/week5/concurrent_map/concurrent_map.cpp.o
+.PHONY : week5/concurrent_map/concurrent_map.cpp.o
 
-week5/priority_collection/priority_collection.i: week5/priority_collection/priority_collection.cpp.i
+week5/concurrent_map/concurrent_map.i: week5/concurrent_map/concurrent_map.cpp.i
 
-.PHONY : week5/priority_collection/priority_collection.i
+.PHONY : week5/concurrent_map/concurrent_map.i
 
 # target to preprocess a source file
-week5/priority_collection/priority_collection.cpp.i:
-	$(MAKE) -f CMakeFiles/course.dir/build.make CMakeFiles/course.dir/week5/priority_collection/priority_collection.cpp.i
-.PHONY : week5/priority_collection/priority_collection.cpp.i
+week5/concurrent_map/concurrent_map.cpp.i:
+	$(MAKE) -f CMakeFiles/course.dir/build.make CMakeFiles/course.dir/week5/concurrent_map/concurrent_map.cpp.i
+.PHONY : week5/concurrent_map/concurrent_map.cpp.i
 
-week5/priority_collection/priority_collection.s: week5/priority_collection/priority_collection.cpp.s
+week5/concurrent_map/concurrent_map.s: week5/concurrent_map/concurrent_map.cpp.s
 
-.PHONY : week5/priority_collection/priority_collection.s
+.PHONY : week5/concurrent_map/concurrent_map.s
 
 # target to generate assembly for a file
-week5/priority_collection/priority_collection.cpp.s:
-	$(MAKE) -f CMakeFiles/course.dir/build.make CMakeFiles/course.dir/week5/priority_collection/priority_collection.cpp.s
-.PHONY : week5/priority_collection/priority_collection.cpp.s
+week5/concurrent_map/concurrent_map.cpp.s:
+	$(MAKE) -f CMakeFiles/course.dir/build.make CMakeFiles/course.dir/week5/concurrent_map/concurrent_map.cpp.s
+.PHONY : week5/concurrent_map/concurrent_map.cpp.s
+
+week5/concurrent_map/course_solution.o: week5/concurrent_map/course_solution.cpp.o
+
+.PHONY : week5/concurrent_map/course_solution.o
+
+# target to build an object file
+week5/concurrent_map/course_solution.cpp.o:
+	$(MAKE) -f CMakeFiles/course.dir/build.make CMakeFiles/course.dir/week5/concurrent_map/course_solution.cpp.o
+.PHONY : week5/concurrent_map/course_solution.cpp.o
+
+week5/concurrent_map/course_solution.i: week5/concurrent_map/course_solution.cpp.i
+
+.PHONY : week5/concurrent_map/course_solution.i
+
+# target to preprocess a source file
+week5/concurrent_map/course_solution.cpp.i:
+	$(MAKE) -f CMakeFiles/course.dir/build.make CMakeFiles/course.dir/week5/concurrent_map/course_solution.cpp.i
+.PHONY : week5/concurrent_map/course_solution.cpp.i
+
+week5/concurrent_map/course_solution.s: week5/concurrent_map/course_solution.cpp.s
+
+.PHONY : week5/concurrent_map/course_solution.s
+
+# target to generate assembly for a file
+week5/concurrent_map/course_solution.cpp.s:
+	$(MAKE) -f CMakeFiles/course.dir/build.make CMakeFiles/course.dir/week5/concurrent_map/course_solution.cpp.s
+.PHONY : week5/concurrent_map/course_solution.cpp.s
 
 # Help Target
 help:
@@ -186,12 +186,12 @@ help:
 	@echo "... rebuild_cache"
 	@echo "... edit_cache"
 	@echo "... course"
-	@echo "... week5/priority_collection/course_solution.o"
-	@echo "... week5/priority_collection/course_solution.i"
-	@echo "... week5/priority_collection/course_solution.s"
-	@echo "... week5/priority_collection/priority_collection.o"
-	@echo "... week5/priority_collection/priority_collection.i"
-	@echo "... week5/priority_collection/priority_collection.s"
+	@echo "... week5/concurrent_map/concurrent_map.o"
+	@echo "... week5/concurrent_map/concurrent_map.i"
+	@echo "... week5/concurrent_map/concurrent_map.s"
+	@echo "... week5/concurrent_map/course_solution.o"
+	@echo "... week5/concurrent_map/course_solution.i"
+	@echo "... week5/concurrent_map/course_solution.s"
 .PHONY : help
 
 
