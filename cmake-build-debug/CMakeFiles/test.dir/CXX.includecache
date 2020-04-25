@@ -1,0 +1,22 @@
+#IncludeRegexLine: ^[ 	]*[#%][ 	]*(include|import)[ 	]*[<"]([^">]+)([">])
+
+#IncludeRegexScan: ^.*$
+
+#IncludeRegexComplain: ^$
+
+#IncludeRegexTransform: 
+
+/home/professor/Desktop/coursera_red-belt_c/main.cpp
+string_view
+-
+vector
+-
+string
+-
+iostream
+-
+map
+-
+list
+-
+

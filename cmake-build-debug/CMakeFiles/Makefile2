@@ -53,6 +53,7 @@ CMAKE_BINARY_DIR = /home/professor/Desktop/coursera_red-belt_c/cmake-build-debug
 # Directory level rules for the build root directory
 
 # The main recursive "all" target.
+all: CMakeFiles/test.dir/all
 all: CMakeFiles/course.dir/all
 
 .PHONY : all
@@ -63,9 +64,37 @@ preinstall:
 .PHONY : preinstall
 
 # The main recursive "clean" target.
+clean: CMakeFiles/test.dir/clean
 clean: CMakeFiles/course.dir/clean
 
 .PHONY : clean
+
+#=============================================================================
+# Target rules for target CMakeFiles/test.dir
+
+# All Build rule for target.
+CMakeFiles/test.dir/all:
+	$(MAKE) -f CMakeFiles/test.dir/build.make CMakeFiles/test.dir/depend
+	$(MAKE) -f CMakeFiles/test.dir/build.make CMakeFiles/test.dir/build
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/professor/Desktop/coursera_red-belt_c/cmake-build-debug/CMakeFiles --progress-num=5,6 "Built target test"
+.PHONY : CMakeFiles/test.dir/all
+
+# Build rule for subdir invocation for target.
+CMakeFiles/test.dir/rule: cmake_check_build_system
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/professor/Desktop/coursera_red-belt_c/cmake-build-debug/CMakeFiles 2
+	$(MAKE) -f CMakeFiles/Makefile2 CMakeFiles/test.dir/all
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/professor/Desktop/coursera_red-belt_c/cmake-build-debug/CMakeFiles 0
+.PHONY : CMakeFiles/test.dir/rule
+
+# Convenience name for target.
+test: CMakeFiles/test.dir/rule
+
+.PHONY : test
+
+# clean rule for target.
+CMakeFiles/test.dir/clean:
+	$(MAKE) -f CMakeFiles/test.dir/build.make CMakeFiles/test.dir/clean
+.PHONY : CMakeFiles/test.dir/clean
 
 #=============================================================================
 # Target rules for target CMakeFiles/course.dir
@@ -74,12 +103,12 @@ clean: CMakeFiles/course.dir/clean
 CMakeFiles/course.dir/all:
 	$(MAKE) -f CMakeFiles/course.dir/build.make CMakeFiles/course.dir/depend
 	$(MAKE) -f CMakeFiles/course.dir/build.make CMakeFiles/course.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/professor/Desktop/coursera_red-belt_c/cmake-build-debug/CMakeFiles --progress-num=1,2,3 "Built target course"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/professor/Desktop/coursera_red-belt_c/cmake-build-debug/CMakeFiles --progress-num=1,2,3,4 "Built target course"
 .PHONY : CMakeFiles/course.dir/all
 
 # Build rule for subdir invocation for target.
 CMakeFiles/course.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/professor/Desktop/coursera_red-belt_c/cmake-build-debug/CMakeFiles 3
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/professor/Desktop/coursera_red-belt_c/cmake-build-debug/CMakeFiles 4
 	$(MAKE) -f CMakeFiles/Makefile2 CMakeFiles/course.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start /home/professor/Desktop/coursera_red-belt_c/cmake-build-debug/CMakeFiles 0
 .PHONY : CMakeFiles/course.dir/rule

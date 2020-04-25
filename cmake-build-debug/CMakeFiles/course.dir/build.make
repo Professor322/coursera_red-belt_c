@@ -57,45 +57,60 @@ include CMakeFiles/course.dir/progress.make
 # Include the compile flags for this target's objects.
 include CMakeFiles/course.dir/flags.make
 
-CMakeFiles/course.dir/week5/concurrent_map/concurrent_map.cpp.o: CMakeFiles/course.dir/flags.make
-CMakeFiles/course.dir/week5/concurrent_map/concurrent_map.cpp.o: ../week5/concurrent_map/concurrent_map.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/professor/Desktop/coursera_red-belt_c/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object CMakeFiles/course.dir/week5/concurrent_map/concurrent_map.cpp.o"
-	/usr/bin/g++-9  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/course.dir/week5/concurrent_map/concurrent_map.cpp.o -c /home/professor/Desktop/coursera_red-belt_c/week5/concurrent_map/concurrent_map.cpp
+CMakeFiles/course.dir/final_project/my_solution/main.cpp.o: CMakeFiles/course.dir/flags.make
+CMakeFiles/course.dir/final_project/my_solution/main.cpp.o: ../final_project/my_solution/main.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/professor/Desktop/coursera_red-belt_c/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object CMakeFiles/course.dir/final_project/my_solution/main.cpp.o"
+	/usr/bin/g++-9  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/course.dir/final_project/my_solution/main.cpp.o -c /home/professor/Desktop/coursera_red-belt_c/final_project/my_solution/main.cpp
 
-CMakeFiles/course.dir/week5/concurrent_map/concurrent_map.cpp.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/course.dir/week5/concurrent_map/concurrent_map.cpp.i"
-	/usr/bin/g++-9 $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/professor/Desktop/coursera_red-belt_c/week5/concurrent_map/concurrent_map.cpp > CMakeFiles/course.dir/week5/concurrent_map/concurrent_map.cpp.i
+CMakeFiles/course.dir/final_project/my_solution/main.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/course.dir/final_project/my_solution/main.cpp.i"
+	/usr/bin/g++-9 $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/professor/Desktop/coursera_red-belt_c/final_project/my_solution/main.cpp > CMakeFiles/course.dir/final_project/my_solution/main.cpp.i
 
-CMakeFiles/course.dir/week5/concurrent_map/concurrent_map.cpp.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/course.dir/week5/concurrent_map/concurrent_map.cpp.s"
-	/usr/bin/g++-9 $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/professor/Desktop/coursera_red-belt_c/week5/concurrent_map/concurrent_map.cpp -o CMakeFiles/course.dir/week5/concurrent_map/concurrent_map.cpp.s
+CMakeFiles/course.dir/final_project/my_solution/main.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/course.dir/final_project/my_solution/main.cpp.s"
+	/usr/bin/g++-9 $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/professor/Desktop/coursera_red-belt_c/final_project/my_solution/main.cpp -o CMakeFiles/course.dir/final_project/my_solution/main.cpp.s
 
-CMakeFiles/course.dir/week5/concurrent_map/course_solution.cpp.o: CMakeFiles/course.dir/flags.make
-CMakeFiles/course.dir/week5/concurrent_map/course_solution.cpp.o: ../week5/concurrent_map/course_solution.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/professor/Desktop/coursera_red-belt_c/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Building CXX object CMakeFiles/course.dir/week5/concurrent_map/course_solution.cpp.o"
-	/usr/bin/g++-9  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/course.dir/week5/concurrent_map/course_solution.cpp.o -c /home/professor/Desktop/coursera_red-belt_c/week5/concurrent_map/course_solution.cpp
+CMakeFiles/course.dir/final_project/my_solution/parse.cpp.o: CMakeFiles/course.dir/flags.make
+CMakeFiles/course.dir/final_project/my_solution/parse.cpp.o: ../final_project/my_solution/parse.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/professor/Desktop/coursera_red-belt_c/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Building CXX object CMakeFiles/course.dir/final_project/my_solution/parse.cpp.o"
+	/usr/bin/g++-9  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/course.dir/final_project/my_solution/parse.cpp.o -c /home/professor/Desktop/coursera_red-belt_c/final_project/my_solution/parse.cpp
 
-CMakeFiles/course.dir/week5/concurrent_map/course_solution.cpp.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/course.dir/week5/concurrent_map/course_solution.cpp.i"
-	/usr/bin/g++-9 $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/professor/Desktop/coursera_red-belt_c/week5/concurrent_map/course_solution.cpp > CMakeFiles/course.dir/week5/concurrent_map/course_solution.cpp.i
+CMakeFiles/course.dir/final_project/my_solution/parse.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/course.dir/final_project/my_solution/parse.cpp.i"
+	/usr/bin/g++-9 $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/professor/Desktop/coursera_red-belt_c/final_project/my_solution/parse.cpp > CMakeFiles/course.dir/final_project/my_solution/parse.cpp.i
 
-CMakeFiles/course.dir/week5/concurrent_map/course_solution.cpp.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/course.dir/week5/concurrent_map/course_solution.cpp.s"
-	/usr/bin/g++-9 $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/professor/Desktop/coursera_red-belt_c/week5/concurrent_map/course_solution.cpp -o CMakeFiles/course.dir/week5/concurrent_map/course_solution.cpp.s
+CMakeFiles/course.dir/final_project/my_solution/parse.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/course.dir/final_project/my_solution/parse.cpp.s"
+	/usr/bin/g++-9 $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/professor/Desktop/coursera_red-belt_c/final_project/my_solution/parse.cpp -o CMakeFiles/course.dir/final_project/my_solution/parse.cpp.s
+
+CMakeFiles/course.dir/final_project/my_solution/search_server.cpp.o: CMakeFiles/course.dir/flags.make
+CMakeFiles/course.dir/final_project/my_solution/search_server.cpp.o: ../final_project/my_solution/search_server.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/professor/Desktop/coursera_red-belt_c/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Building CXX object CMakeFiles/course.dir/final_project/my_solution/search_server.cpp.o"
+	/usr/bin/g++-9  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/course.dir/final_project/my_solution/search_server.cpp.o -c /home/professor/Desktop/coursera_red-belt_c/final_project/my_solution/search_server.cpp
+
+CMakeFiles/course.dir/final_project/my_solution/search_server.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/course.dir/final_project/my_solution/search_server.cpp.i"
+	/usr/bin/g++-9 $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/professor/Desktop/coursera_red-belt_c/final_project/my_solution/search_server.cpp > CMakeFiles/course.dir/final_project/my_solution/search_server.cpp.i
+
+CMakeFiles/course.dir/final_project/my_solution/search_server.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/course.dir/final_project/my_solution/search_server.cpp.s"
+	/usr/bin/g++-9 $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/professor/Desktop/coursera_red-belt_c/final_project/my_solution/search_server.cpp -o CMakeFiles/course.dir/final_project/my_solution/search_server.cpp.s
 
 # Object files for target course
 course_OBJECTS = \
-"CMakeFiles/course.dir/week5/concurrent_map/concurrent_map.cpp.o" \
-"CMakeFiles/course.dir/week5/concurrent_map/course_solution.cpp.o"
+"CMakeFiles/course.dir/final_project/my_solution/main.cpp.o" \
+"CMakeFiles/course.dir/final_project/my_solution/parse.cpp.o" \
+"CMakeFiles/course.dir/final_project/my_solution/search_server.cpp.o"
 
 # External object files for target course
 course_EXTERNAL_OBJECTS =
 
-course: CMakeFiles/course.dir/week5/concurrent_map/concurrent_map.cpp.o
-course: CMakeFiles/course.dir/week5/concurrent_map/course_solution.cpp.o
+course: CMakeFiles/course.dir/final_project/my_solution/main.cpp.o
+course: CMakeFiles/course.dir/final_project/my_solution/parse.cpp.o
+course: CMakeFiles/course.dir/final_project/my_solution/search_server.cpp.o
 course: CMakeFiles/course.dir/build.make
 course: CMakeFiles/course.dir/link.txt
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/home/professor/Desktop/coursera_red-belt_c/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Linking CXX executable course"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/home/professor/Desktop/coursera_red-belt_c/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_4) "Linking CXX executable course"
 	$(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/course.dir/link.txt --verbose=$(VERBOSE)
 
 # Rule to build all files generated by this target.

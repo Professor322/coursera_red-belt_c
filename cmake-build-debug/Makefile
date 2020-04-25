@@ -111,6 +111,19 @@ depend:
 .PHONY : depend
 
 #=============================================================================
+# Target rules for targets named test
+
+# Build rule for target.
+test: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 test
+.PHONY : test
+
+# fast build rule for target.
+test/fast:
+	$(MAKE) -f CMakeFiles/test.dir/build.make CMakeFiles/test.dir/build
+.PHONY : test/fast
+
+#=============================================================================
 # Target rules for targets named course
 
 # Build rule for target.
@@ -123,59 +136,113 @@ course/fast:
 	$(MAKE) -f CMakeFiles/course.dir/build.make CMakeFiles/course.dir/build
 .PHONY : course/fast
 
-week5/concurrent_map/concurrent_map.o: week5/concurrent_map/concurrent_map.cpp.o
+final_project/my_solution/main.o: final_project/my_solution/main.cpp.o
 
-.PHONY : week5/concurrent_map/concurrent_map.o
-
-# target to build an object file
-week5/concurrent_map/concurrent_map.cpp.o:
-	$(MAKE) -f CMakeFiles/course.dir/build.make CMakeFiles/course.dir/week5/concurrent_map/concurrent_map.cpp.o
-.PHONY : week5/concurrent_map/concurrent_map.cpp.o
-
-week5/concurrent_map/concurrent_map.i: week5/concurrent_map/concurrent_map.cpp.i
-
-.PHONY : week5/concurrent_map/concurrent_map.i
-
-# target to preprocess a source file
-week5/concurrent_map/concurrent_map.cpp.i:
-	$(MAKE) -f CMakeFiles/course.dir/build.make CMakeFiles/course.dir/week5/concurrent_map/concurrent_map.cpp.i
-.PHONY : week5/concurrent_map/concurrent_map.cpp.i
-
-week5/concurrent_map/concurrent_map.s: week5/concurrent_map/concurrent_map.cpp.s
-
-.PHONY : week5/concurrent_map/concurrent_map.s
-
-# target to generate assembly for a file
-week5/concurrent_map/concurrent_map.cpp.s:
-	$(MAKE) -f CMakeFiles/course.dir/build.make CMakeFiles/course.dir/week5/concurrent_map/concurrent_map.cpp.s
-.PHONY : week5/concurrent_map/concurrent_map.cpp.s
-
-week5/concurrent_map/course_solution.o: week5/concurrent_map/course_solution.cpp.o
-
-.PHONY : week5/concurrent_map/course_solution.o
+.PHONY : final_project/my_solution/main.o
 
 # target to build an object file
-week5/concurrent_map/course_solution.cpp.o:
-	$(MAKE) -f CMakeFiles/course.dir/build.make CMakeFiles/course.dir/week5/concurrent_map/course_solution.cpp.o
-.PHONY : week5/concurrent_map/course_solution.cpp.o
+final_project/my_solution/main.cpp.o:
+	$(MAKE) -f CMakeFiles/course.dir/build.make CMakeFiles/course.dir/final_project/my_solution/main.cpp.o
+.PHONY : final_project/my_solution/main.cpp.o
 
-week5/concurrent_map/course_solution.i: week5/concurrent_map/course_solution.cpp.i
+final_project/my_solution/main.i: final_project/my_solution/main.cpp.i
 
-.PHONY : week5/concurrent_map/course_solution.i
+.PHONY : final_project/my_solution/main.i
 
 # target to preprocess a source file
-week5/concurrent_map/course_solution.cpp.i:
-	$(MAKE) -f CMakeFiles/course.dir/build.make CMakeFiles/course.dir/week5/concurrent_map/course_solution.cpp.i
-.PHONY : week5/concurrent_map/course_solution.cpp.i
+final_project/my_solution/main.cpp.i:
+	$(MAKE) -f CMakeFiles/course.dir/build.make CMakeFiles/course.dir/final_project/my_solution/main.cpp.i
+.PHONY : final_project/my_solution/main.cpp.i
 
-week5/concurrent_map/course_solution.s: week5/concurrent_map/course_solution.cpp.s
+final_project/my_solution/main.s: final_project/my_solution/main.cpp.s
 
-.PHONY : week5/concurrent_map/course_solution.s
+.PHONY : final_project/my_solution/main.s
 
 # target to generate assembly for a file
-week5/concurrent_map/course_solution.cpp.s:
-	$(MAKE) -f CMakeFiles/course.dir/build.make CMakeFiles/course.dir/week5/concurrent_map/course_solution.cpp.s
-.PHONY : week5/concurrent_map/course_solution.cpp.s
+final_project/my_solution/main.cpp.s:
+	$(MAKE) -f CMakeFiles/course.dir/build.make CMakeFiles/course.dir/final_project/my_solution/main.cpp.s
+.PHONY : final_project/my_solution/main.cpp.s
+
+final_project/my_solution/parse.o: final_project/my_solution/parse.cpp.o
+
+.PHONY : final_project/my_solution/parse.o
+
+# target to build an object file
+final_project/my_solution/parse.cpp.o:
+	$(MAKE) -f CMakeFiles/course.dir/build.make CMakeFiles/course.dir/final_project/my_solution/parse.cpp.o
+.PHONY : final_project/my_solution/parse.cpp.o
+
+final_project/my_solution/parse.i: final_project/my_solution/parse.cpp.i
+
+.PHONY : final_project/my_solution/parse.i
+
+# target to preprocess a source file
+final_project/my_solution/parse.cpp.i:
+	$(MAKE) -f CMakeFiles/course.dir/build.make CMakeFiles/course.dir/final_project/my_solution/parse.cpp.i
+.PHONY : final_project/my_solution/parse.cpp.i
+
+final_project/my_solution/parse.s: final_project/my_solution/parse.cpp.s
+
+.PHONY : final_project/my_solution/parse.s
+
+# target to generate assembly for a file
+final_project/my_solution/parse.cpp.s:
+	$(MAKE) -f CMakeFiles/course.dir/build.make CMakeFiles/course.dir/final_project/my_solution/parse.cpp.s
+.PHONY : final_project/my_solution/parse.cpp.s
+
+final_project/my_solution/search_server.o: final_project/my_solution/search_server.cpp.o
+
+.PHONY : final_project/my_solution/search_server.o
+
+# target to build an object file
+final_project/my_solution/search_server.cpp.o:
+	$(MAKE) -f CMakeFiles/course.dir/build.make CMakeFiles/course.dir/final_project/my_solution/search_server.cpp.o
+.PHONY : final_project/my_solution/search_server.cpp.o
+
+final_project/my_solution/search_server.i: final_project/my_solution/search_server.cpp.i
+
+.PHONY : final_project/my_solution/search_server.i
+
+# target to preprocess a source file
+final_project/my_solution/search_server.cpp.i:
+	$(MAKE) -f CMakeFiles/course.dir/build.make CMakeFiles/course.dir/final_project/my_solution/search_server.cpp.i
+.PHONY : final_project/my_solution/search_server.cpp.i
+
+final_project/my_solution/search_server.s: final_project/my_solution/search_server.cpp.s
+
+.PHONY : final_project/my_solution/search_server.s
+
+# target to generate assembly for a file
+final_project/my_solution/search_server.cpp.s:
+	$(MAKE) -f CMakeFiles/course.dir/build.make CMakeFiles/course.dir/final_project/my_solution/search_server.cpp.s
+.PHONY : final_project/my_solution/search_server.cpp.s
+
+main.o: main.cpp.o
+
+.PHONY : main.o
+
+# target to build an object file
+main.cpp.o:
+	$(MAKE) -f CMakeFiles/test.dir/build.make CMakeFiles/test.dir/main.cpp.o
+.PHONY : main.cpp.o
+
+main.i: main.cpp.i
+
+.PHONY : main.i
+
+# target to preprocess a source file
+main.cpp.i:
+	$(MAKE) -f CMakeFiles/test.dir/build.make CMakeFiles/test.dir/main.cpp.i
+.PHONY : main.cpp.i
+
+main.s: main.cpp.s
+
+.PHONY : main.s
+
+# target to generate assembly for a file
+main.cpp.s:
+	$(MAKE) -f CMakeFiles/test.dir/build.make CMakeFiles/test.dir/main.cpp.s
+.PHONY : main.cpp.s
 
 # Help Target
 help:
@@ -184,14 +251,21 @@ help:
 	@echo "... clean"
 	@echo "... depend"
 	@echo "... rebuild_cache"
+	@echo "... test"
 	@echo "... edit_cache"
 	@echo "... course"
-	@echo "... week5/concurrent_map/concurrent_map.o"
-	@echo "... week5/concurrent_map/concurrent_map.i"
-	@echo "... week5/concurrent_map/concurrent_map.s"
-	@echo "... week5/concurrent_map/course_solution.o"
-	@echo "... week5/concurrent_map/course_solution.i"
-	@echo "... week5/concurrent_map/course_solution.s"
+	@echo "... final_project/my_solution/main.o"
+	@echo "... final_project/my_solution/main.i"
+	@echo "... final_project/my_solution/main.s"
+	@echo "... final_project/my_solution/parse.o"
+	@echo "... final_project/my_solution/parse.i"
+	@echo "... final_project/my_solution/parse.s"
+	@echo "... final_project/my_solution/search_server.o"
+	@echo "... final_project/my_solution/search_server.i"
+	@echo "... final_project/my_solution/search_server.s"
+	@echo "... main.o"
+	@echo "... main.i"
+	@echo "... main.s"
 .PHONY : help
 
 

@@ -27,6 +27,56 @@
 					<DistClean command="/usr/bin/make -j4 -f &quot;/home/professor/Desktop/coursera_red-belt_c/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
 				</MakeCommands>
 			</Target>
+			<Target title="test">
+				<Option output="/home/professor/Desktop/coursera_red-belt_c/cmake-build-debug/test" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir=""/>
+				<Option object_output="./"/>
+				<Option type="1"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add directory="/home/professor/Desktop/coursera_red-belt_c/include"/>
+					<Add directory="/home/professor/Desktop/coursera_red-belt_c/final_project"/>
+					<Add directory="/usr/include/c++/9"/>
+					<Add directory="/usr/include/x86_64-linux-gnu/c++/9"/>
+					<Add directory="/usr/include/c++/9/backward"/>
+					<Add directory="/usr/lib/gcc/x86_64-linux-gnu/9/include"/>
+					<Add directory="/usr/local/include"/>
+					<Add directory="/usr/lib/gcc/x86_64-linux-gnu/9/include-fixed"/>
+					<Add directory="/usr/include/x86_64-linux-gnu"/>
+					<Add directory="/usr/include"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j4 -f &quot;/home/professor/Desktop/coursera_red-belt_c/cmake-build-debug/Makefile&quot;  VERBOSE=1 test"/>
+					<CompileFile command="/usr/bin/make -j4 -f &quot;/home/professor/Desktop/coursera_red-belt_c/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j4 -f &quot;/home/professor/Desktop/coursera_red-belt_c/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j4 -f &quot;/home/professor/Desktop/coursera_red-belt_c/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="test/fast">
+				<Option output="/home/professor/Desktop/coursera_red-belt_c/cmake-build-debug/test" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir=""/>
+				<Option object_output="./"/>
+				<Option type="1"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add directory="/home/professor/Desktop/coursera_red-belt_c/include"/>
+					<Add directory="/home/professor/Desktop/coursera_red-belt_c/final_project"/>
+					<Add directory="/usr/include/c++/9"/>
+					<Add directory="/usr/include/x86_64-linux-gnu/c++/9"/>
+					<Add directory="/usr/include/c++/9/backward"/>
+					<Add directory="/usr/lib/gcc/x86_64-linux-gnu/9/include"/>
+					<Add directory="/usr/local/include"/>
+					<Add directory="/usr/lib/gcc/x86_64-linux-gnu/9/include-fixed"/>
+					<Add directory="/usr/include/x86_64-linux-gnu"/>
+					<Add directory="/usr/include"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j4 -f &quot;/home/professor/Desktop/coursera_red-belt_c/cmake-build-debug/Makefile&quot;  VERBOSE=1 test/fast"/>
+					<CompileFile command="/usr/bin/make -j4 -f &quot;/home/professor/Desktop/coursera_red-belt_c/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j4 -f &quot;/home/professor/Desktop/coursera_red-belt_c/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j4 -f &quot;/home/professor/Desktop/coursera_red-belt_c/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
 			<Target title="edit_cache">
 				<Option working_dir="/home/professor/Desktop/coursera_red-belt_c/cmake-build-debug"/>
 				<Option type="4"/>
@@ -45,6 +95,7 @@
 				<Option compiler="gcc"/>
 				<Compiler>
 					<Add directory="/home/professor/Desktop/coursera_red-belt_c/include"/>
+					<Add directory="/home/professor/Desktop/coursera_red-belt_c/final_project"/>
 					<Add directory="/usr/include/c++/9"/>
 					<Add directory="/usr/include/x86_64-linux-gnu/c++/9"/>
 					<Add directory="/usr/include/c++/9/backward"/>
@@ -69,6 +120,7 @@
 				<Option compiler="gcc"/>
 				<Compiler>
 					<Add directory="/home/professor/Desktop/coursera_red-belt_c/include"/>
+					<Add directory="/home/professor/Desktop/coursera_red-belt_c/final_project"/>
 					<Add directory="/usr/include/c++/9"/>
 					<Add directory="/usr/include/x86_64-linux-gnu/c++/9"/>
 					<Add directory="/usr/include/c++/9/backward"/>
@@ -86,11 +138,26 @@
 				</MakeCommands>
 			</Target>
 		</Build>
-		<Unit filename="/home/professor/Desktop/coursera_red-belt_c/week5/concurrent_map/concurrent_map.cpp">
+		<Unit filename="/home/professor/Desktop/coursera_red-belt_c/final_project/my_solution/main.cpp">
 			<Option target="course"/>
 		</Unit>
-		<Unit filename="/home/professor/Desktop/coursera_red-belt_c/week5/concurrent_map/course_solution.cpp">
+		<Unit filename="/home/professor/Desktop/coursera_red-belt_c/final_project/my_solution/parse.cpp">
 			<Option target="course"/>
+		</Unit>
+		<Unit filename="/home/professor/Desktop/coursera_red-belt_c/final_project/my_solution/parse.h">
+			<Option target="course"/>
+		</Unit>
+		<Unit filename="/home/professor/Desktop/coursera_red-belt_c/final_project/my_solution/search_server.cpp">
+			<Option target="course"/>
+		</Unit>
+		<Unit filename="/home/professor/Desktop/coursera_red-belt_c/final_project/my_solution/search_server.h">
+			<Option target="course"/>
+		</Unit>
+		<Unit filename="/home/professor/Desktop/coursera_red-belt_c/include/total_duration.h">
+			<Option target="course"/>
+		</Unit>
+		<Unit filename="/home/professor/Desktop/coursera_red-belt_c/main.cpp">
+			<Option target="test"/>
 		</Unit>
 		<Unit filename="/home/professor/Desktop/coursera_red-belt_c/CMakeLists.txt">
 			<Option virtualFolder="CMake Files\"/>
